@@ -18,6 +18,17 @@ body {
     box-sizing: border-box;
     position: relative;
 
+    #timer {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        font-family: "Anta", sans-serif;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
     #gameOver {
         position: absolute;
         top: 50%;
@@ -38,14 +49,23 @@ body {
             color: #f6c343;
         }
 
+        #timeUp {
+            font-size: 30px;
+        }
+
         button {
             height: 10%;
             width: 30%;
             font-size: 30px;
-            color: #f6c343;
-            background-color: #e43426;
+            color: #e43426;
+            background-color: #f6c343;
             border-radius: 12em;
-            border: 2px solid black;
+            border: 2px solid #f6c343;
+        }
+
+        button:hover {
+            color: #e93023;
+            background-color: #fad26f;
         }
     }
 
@@ -73,6 +93,7 @@ body {
 
             img {
                 height: 100px;
+                width: 100px;
             }
         }
     }
