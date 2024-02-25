@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/mario-bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+    position: relative;
+
+    #gameOver {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40%;
+        width: 50%;
+        background-color: #e43426;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 50px;
+        border: 5px solid black;
+
+        label {
+            font-size: 80px;
+            color: #f6c343;
+        }
+
+        button {
+            height: 10%;
+            width: 30%;
+            font-size: 30px;
+            color: #f6c343;
+            background-color: #e43426;
+            border-radius: 12em;
+            border: 2px solid black;
+        }
+    }
+
+    label,
+    #score {
+        font-size: 50px;
+        font-family: "Anta", sans-serif;
+        font-weight: bolder;
+    }
+
+    #container {
+        width: 600px;
+        height: 600px;
+        background-image: url(img/soil.png);
+        background-size: cover;
+        border: 5px solid white;
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        div {
+            background-image: url(img/pipe.png);
+            background-size: cover;
+
+            img {
+                height: 100px;
+            }
+        }
+    }
+}
